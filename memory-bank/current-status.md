@@ -1,6 +1,7 @@
 # Current Project Status
 
 ## Implemented features (verified)
+
 - Backend endpoints:
   - `/health`
   - `/api/metrics`
@@ -15,18 +16,21 @@
 - Frontend and backend both have test suites for core behavior.
 
 ## Governance and maintainability status
+
 - Added repository understanding and evidence validation artifact.
 - Added engineering practice analysis with explicit risk inventory.
 - Added actionable rule set under `.agents/rules` with workflow validation.
 - Added memory-bank documents for product, stack, and current status.
 
 ## Known gaps and risks
+
 - Runtime validation on this machine is blocked because Docker CLI is not installed; service URL checks could not be executed locally.
 - Backend CORS defaults are permissive and should be environment-gated before production use.
 - Frontend API call lacks explicit timeout/abort handling.
 - UI language policy is not formally standardized.
 
 ## Recommended next priorities
+
 1. Install Docker and validate runtime endpoints:
    - `http://localhost:5173`
    - `http://localhost:8000`
@@ -36,6 +40,7 @@
 4. Formalize UI copy language policy or i18n strategy.
 
 ## Evidence sources
+
 - `README.md`
 - `docker-compose.yml`
 - `backend/app/main.py`
