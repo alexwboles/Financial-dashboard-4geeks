@@ -74,16 +74,21 @@ Evidence:
 
 Claim: Local standard runtime is Docker Compose with frontend on 5173 and backend on 8000.
 
-Status: Verified in configuration, runtime check blocked on this machine.
+Status: Verified in configuration and runtime.
 
 Evidence:
 
 - `README.md` documents `docker compose up --build` and expected URLs.
 - `docker-compose.yml` maps `5173:5173` and `8000:8000`.
+- Runtime checks returned HTTP 200 for:
+	- `http://localhost:5173`
+	- `http://localhost:8000/health`
+	- `http://localhost:8000/docs`
 
 Runtime validation note:
 
-- Runtime endpoint checks were attempted but blocked because Docker CLI is not installed in this environment.
+- Docker Desktop and WSL were installed and configured.
+- Services were started with Docker Compose and validated successfully.
 
 ## Corrections and caveats
 

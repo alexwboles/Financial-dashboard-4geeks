@@ -24,20 +24,16 @@
 
 ## Known gaps and risks
 
-- Runtime validation on this machine is blocked because Docker CLI is not installed; service URL checks could not be executed locally.
+- Docker runtime validation is complete for required endpoints (`5173`, `8000/health`, `8000/docs`).
 - Backend CORS defaults are permissive and should be environment-gated before production use.
 - Frontend API call lacks explicit timeout/abort handling.
 - UI language policy is not formally standardized.
 
 ## Recommended next priorities
 
-1. Install Docker and validate runtime endpoints:
-   - `http://localhost:5173`
-   - `http://localhost:8000`
-   - `http://localhost:8000/docs`
-2. Introduce environment-aware backend security settings.
-3. Add frontend request timeout/abort strategy and test failure paths.
-4. Formalize UI copy language policy or i18n strategy.
+1. Introduce environment-aware backend security settings.
+2. Add frontend request timeout/abort strategy and test failure paths.
+3. Formalize UI copy language policy or i18n strategy.
 
 ## Evidence sources
 
