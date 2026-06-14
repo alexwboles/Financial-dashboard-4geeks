@@ -20,10 +20,9 @@
 
 ### In progress
 
-- Build validation and final commit grouping for `feature/agent-skills`.
+- None.
 
 ### Next actions
 
-1. Run `npm run build` in `frontend` and confirm success.
-2. Stage and commit changes with clear message(s).
-3. Push `feature/agent-skills` and share completion evidence.
+1. Open a pull request from `feature/agent-skills` into `main`.
+2. Attach final evidence notes in the PR description.
