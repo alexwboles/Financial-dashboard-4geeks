@@ -81,9 +81,9 @@ Evidence:
 - `README.md` documents `docker compose up --build` and expected URLs.
 - `docker-compose.yml` maps `5173:5173` and `8000:8000`.
 - Runtime checks returned HTTP 200 for:
-	- `http://localhost:5173`
-	- `http://localhost:8000/health`
-	- `http://localhost:8000/docs`
+  - `http://localhost:5173`
+  - `http://localhost:8000/health`
+  - `http://localhost:8000/docs`
 
 Runtime validation note:
 
